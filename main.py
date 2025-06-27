@@ -10,7 +10,7 @@ bot = Client("CourseExtractorBot", api_id=API_ID, api_hash=API_HASH, bot_token=B
 
 @bot.on_message(filters.command("start"))
 async def start_handler(client, message: Message):
-    await message.reply("👋 Hello!
+    await message.reply("""👋 Hello!
 
 Send me a course link from:
 - Classplus
