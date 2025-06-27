@@ -1,7 +1,13 @@
 import re
 from pyrogram.types import Message
 from utils.telegram_uploader import send_to_telegram
-
+def send_mock_file(client, message, platform):
+    try:
+        dummy_file = "your_existing_video.mp4"  # ensure file is present in repo
+        caption = f"🎬 Sample lecture from {platform}"
+        send_to_telegram(client, message.chat.id, dummy_file, caption)
+    except Exception as e:
+        message.reply(f"❌ Error sending file: {str(e)}")
 
 def handle_course_download(client, message: Message):
     text = message.text.strip().lower()
