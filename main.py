@@ -214,3 +214,6 @@ async def upload(bot: Client, m: Message):
 
 
 bot.run()
+from keep_alive import keep_alive
+
+keep_alive()  # Yeh port 8080 par server bind karega
