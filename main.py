@@ -1,7 +1,5 @@
-# Don't Remove Credit Tg - @VJ_Botz
-# Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
-# Ask Doubt on telegram @KingVJ01
-
+from keep_alive import keep_alive
+keep_alive()  # Yeh port 8080 par server bind karega
 import os
 import re
 import sys
@@ -214,6 +212,3 @@ async def upload(bot: Client, m: Message):
 
 
 bot.run()
-from keep_alive import keep_alive
-
-keep_alive()  # Yeh port 8080 par server bind karega
