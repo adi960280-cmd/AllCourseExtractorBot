@@ -18,7 +18,7 @@ Send me a course link from:
 - PW
 - StudyIQ
 - Utkarsh
-I'll fetch PDFs, Videos & PNGs!")
+I'll fetch PDFs, Videos & PNGs!""")
 
 @bot.on_message(filters.text & ~filters.command(["start"]))
 async def course_handler(client, message: Message):
