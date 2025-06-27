@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: allcourseextractorbot
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python main.py
+    envVars:
+      - key: API_ID
+        value: 29747831
+      - key: API_HASH
+        value: 5a3842719ef9614b1ff57615a338e128
+      - key: BOT_TOKEN
+        value: 7946418048:AAFaNDIaHrHPa1spOTLTNTqFpaKkTEOJxtw
