@@ -6,7 +6,7 @@ from keep_alive import keep_alive
 
 keep_alive()
 
-bot = Client("CourseExtractorBot", api_id=API_ID, api_hash=API_HASH, bot_token=BOT_TOKEN)
+bot = Client("CourseExtractorBot", api_id=29115102, api_hash="1a331db2b00e9d2decaa9c7276449eb6", bot_token="8453295432:AAEgLjaT7jfNO4cl6TpW7pV-tjNIrQf2gj0")
 
 @bot.on_message(filters.command("start"))
 async def start_handler(client, message: Message):
